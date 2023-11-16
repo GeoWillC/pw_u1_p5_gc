@@ -1,0 +1,39 @@
+
+* {
+  text-align: center;
+  
+}
+h3 {
+  color: red;
+}
+h2 {
+  color: navy;
+}
+h3 {
+  color: blue;
+}
+#tabla {
+  margin-left: auto;
+  margin-right: auto;
+  color: green;
+}
+#idtitulo {
+  color: brown;
+}
+.amarillo {
+  color: yellow;
+}
+img[src*=".jpg"] {
+  align-items: end;
+  height: 40px;
+  width: 40px;
+}
+img[src*=".png"] {
+  align-items: start;
+  height: 80px;
+  width: 80px;
+}
+
+h6:hover {
+  color: blue;
+}

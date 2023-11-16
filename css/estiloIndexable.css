@@ -1,0 +1,60 @@
+/* *{
+    text-align: center;
+} */
+/* Padre e hijo (Jerarquico)
+ .menu li{
+    list-style: none;
+
+} */
+.menu li {
+    list-style: none;
+    /* despliegue en linea*/
+    display: inline grid;
+    /* margen asimetrico */
+    margin: 20px 5px 20px 5px;
+    /* background-color: blue; */
+    border: solid;
+    font: bold 14px verdana;
+    /* asimetrico */
+    /* padding:  10px 0px 0px 12px; */
+    /* simetrico */
+    padding: 20px;
+    color: aqua;
+    background-color: blueviolet;
+
+}
+
+.cabecera h1,
+h6 {
+    text-align: left;
+
+}
+
+.menu {
+    background: #BB2100;
+    text-align: left;
+}
+
+h1 {
+    border: solid;
+    font-size: 30px;
+    color: chocolate;
+    margin-left: 15px;
+    background-color: chartreuse;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+    background-color: #63C2A6;
+
+}
+
+.agrupar {
+    border: 2px solid black;
+    
+    background-color: white;
+    width: 500px;
+    margin-left : 500px;
+}
