@@ -19,8 +19,8 @@
     /* padding:  10px 0px 0px 12px; */
     /* simetrico */
     padding: 20px;
-    color: aqua;
-    background-color: blueviolet;
+    color: #C4D7F2;
+    background-color: #FFC300;
 
 }
 
@@ -31,7 +31,7 @@ h6 {
 }
 
 .menu {
-    background: #BB2100;
+    background: #DAF7A6;
     text-align: left;
 }
 
@@ -53,8 +53,70 @@ body{
 
 .agrupar {
     border: 2px solid black;
-    
     background-color: white;
+    width: 900px;
+    margin : 30px auto;
+    border-style: dotted;
+}
+
+.cabecera{
+    background: #fffbb9;
+    border: 3px solid  #999999;
+    padding: 20px;
+    border-style: double;
+}
+.seccion{
+    float: left;
     width: 500px;
-    margin-left : 500px;
+    margin: 10px; 
+
+}
+article {
+    margin-top: 100px;
+    background-color: #fffbcc;
+    border:  1px solid #ff5723;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/* article ,img{
+    float: left;
+} */
+
+time{
+    color:aqua
+}
+
+article footer{
+    float: right;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.pie{
+    clear: both;
+}
+
+#idaside{
+    width: 200px;
+    float: right;
+    margin: auto;
+    /* border-radius: 20%;
+    border: 1px solid #63C2A6; */
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+#idaside blockquote{
+    border:  1px solid black;
+    padding: 10px;
+    background: #fffbb9;
+    margin-bottom:  20px;
+    width: 150;
+    border-radius: 50%;
+}
+img{
+    width: 120px;
+    height: 100px;
+    margin: 20px auto
 }
