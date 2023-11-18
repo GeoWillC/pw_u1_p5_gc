@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function sum(idnum1,idnum2){
+        result=idnum1+idnum2    
+        return result;
+    }
+  </script>
+
+  <body>
+    <header>
+        <h1>Mi calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+
+        <label for="idnum1">Numero 1</label>
+        <input type="number" id="idnum1">
+        <label for="idnum2">Numero 2</label>
+        <input type="number" id="idnum2">
+
+        <button onclick=
+        "document.getElementById('idnum1').style.color='#a598eb'">Cambiar Estilo 1</button>
+        <button onclick="document.getElementById('idnum2').style.background='red'">Cambiar Estilo 2</button>
+        <img id="imgid" src="https://png.pngtree.com/png-clipart/20190124/ourmid/pngtree-neon-bar-circular-border-png-image_532248.jpg" alt="No hay nada"
+        onclick="document.getElementById('imgid').src='https://banner2.cleanpng.com/20171128/334/autumn-red-leaf-png-clipart-image-5a1d63fa805255.6938363915118755785256.jpg'"
+        >
+        <button onclick="document.getElementById('imgid').src='https://banner2.cleanpng.com/20171128/334/autumn-red-leaf-png-clipart-image-5a1d63fa805255.6938363915118755785256.jpg'"  id="imgcmabio" >
+            Cambio de imagen
+        </button>
+        <!-- <button id="sum">
+            +
+        </button>
+        <button id="rest">
+            -
+        </button> -->
+        <!-- <button onclick="document.getElementById('idResultado').innerHTML=1+4">Presentar resultado</button> -->
+        <button id="uno" onclick="document.getElementById('idResultado').innerText=1+4"> Resultado de 6+6</button>
+        <button id="dos" onclick="document.getElementById('iddiv').innerHTML='<button>Hola</button'">Agregar elemento</button>
+        <label for="idResultado" for="">Por ahora</label>
+        <div id="iddiv">
+            <!-- <button>Hola</button> -->
+        </div>
+    </section>
+    <footer>Todos los derechos reservados</footer>
+  </body>
+</html>
