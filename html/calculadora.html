@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <script>
-    function sum(idnum1,idnum2){
-        result=idnum1+idnum2    
-        return result;
-    }
-  </script>
+<script>
+
+        function sumarNumeros(primero, segundo) {
+            var n1 = parseInt(primero);
+            var n2 = parseInt(segundo);
+
+
+            console.log(' Function sumar numeros' + n1);
+            console.log(' Function sumar numeros' + n2);
+
+            var resultado = n1 + n2;
+            console.log(resultado);
+            document.getElementById('idResultado2').innerText = resultado;
+            return resultado;
+        }
+        function restarNumeros(p1, p2) {
+            return p1 - p2;
+        }
+
+        function sumarNumerosCompleto() {
+            var n1 = parseInt(document.getElementById('idnum1').value);
+            var n2 = parseInt(document.getElementById('idnum2').value);
+
+
+            console.log(' Function sumar numeros' + n1);
+            console.log(' Function sumar numeros' + n2);
+
+            var resultado = n1 + n2;
+            console.log(resultado);
+            document.getElementById('idResultado2').innerText = resultado;
+            return resultado;
+        }
+    </script>
 
   <body>
     <header>
@@ -27,7 +54,7 @@
         <button onclick=
         "document.getElementById('idnum1').style.color='#a598eb'">Cambiar Estilo 1</button>
         <button onclick="document.getElementById('idnum2').style.background='red'">Cambiar Estilo 2</button>
-        <img id="imgid" src="https://png.pngtree.com/png-clipart/20190124/ourmid/pngtree-neon-bar-circular-border-png-image_532248.jpg" alt="No hay nada"
+        <img id="imgid" src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" alt="No hay nada"
         onclick="document.getElementById('imgid').src='https://banner2.cleanpng.com/20171128/334/autumn-red-leaf-png-clipart-image-5a1d63fa805255.6938363915118755785256.jpg'"
         >
         <button onclick="document.getElementById('imgid').src='https://banner2.cleanpng.com/20171128/334/autumn-red-leaf-png-clipart-image-5a1d63fa805255.6938363915118755785256.jpg'"  id="imgcmabio" >
@@ -40,13 +67,22 @@
             -
         </button> -->
         <!-- <button onclick="document.getElementById('idResultado').innerHTML=1+4">Presentar resultado</button> -->
-        <button id="uno" onclick="document.getElementById('idResultado').innerText=1+4"> Resultado de 6+6</button>
+        <button id="uno" onclick="document.getElementById('idResultado').innerHTML=1+4"> Resultado de 6+6</button>
         <button id="dos" onclick="document.getElementById('iddiv').innerHTML='<button>Hola</button'">Agregar elemento</button>
-        <label for="idResultado" for="">Por ahora</label>
+        <label id="idResultado" for="">Por ahora</label>
         <div id="iddiv">
             <!-- <button>Hola</button> -->
         </div>
+        <h2>JS Interno</h2>
+        <button
+            onclick="sumarNumeros(document.getElementById('idnum1').value,document.getElementById('idnum2').value)">SUMAR
+            incompleto</button>
+        <button onclick="sumarNumerosCompleto()">SUMAR completo</button>
+        <label id="idResultado2" for="">resultado</label>
+
+
     </section>
     <footer>Todos los derechos reservados</footer>
   </body>
 </html>
+
