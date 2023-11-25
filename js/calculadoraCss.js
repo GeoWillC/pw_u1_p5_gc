@@ -12,7 +12,7 @@ function limpiar(){
     total=0
 }
 
-var texto = "";
+var texto = '';
 var total = 0
 function agregarValor(value) {
     texto+=value

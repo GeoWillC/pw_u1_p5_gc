@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora CSS</title>
     <script src="../js/calculadoraCss.js"></script>
+    <link rel="stylesheet" href="../css/estilosCalculadora.css">
 </head>
-<body>
+<body class="general">
+    <div class="container">
     <header>
         Calculadora CSS
     </header>
     <nav>
-        Vacio por ahora
+        BARRA DE NAVEGACIÓN
     </nav>
+    </div>
+    
     <section>
-        <div>
+        <div class="calculadora_general">
+        <div class="rsp">
+            <label id="respuesta" for="" >Ingrese datos</label>
+        </div>
+        <div class="calculadora_numeros">
+            
             <!-- Teclas -->
-            <button id="idnum0" onclick="agregarValor('0') ">0</button>
+            
             <button id="idnum1" onclick="agregarValor('1')">1</button>
             <button id="idnum2" onclick="agregarValor('2')">2</button>
             <button id="idnum3" onclick="agregarValor('3')">3</button>
@@ -26,22 +35,23 @@
             <button id="idnum7" onclick="agregarValor('7')">7</button>
             <button id="idnum8" onclick="agregarValor('8')">8</button>
             <button id="idnum9" onclick="agregarValor('9')">9</button>
-            <button id="idres" onclick="agregarValor('-')">-</button>
-            <button id="idnmul" onclick="agregarValor('x')">x</button>
-            <button id="idndiv" onclick="agregarValor('/')">/</button>
-             
-             <button id="idsum" onclick="agregarValor('+')">+</button>
-             <button id="idclear" onclick="limpiar()">c</button>
-            <button id="idres" onclick="operar()">=</button>
+            <button class="col3" id="idnum0" onclick="agregarValor('0') ">0</button>
         </div>
-        <div>
-         
-            <label id="respuesta" for="" >Respuesta</label>
+        
+        <div class="calculadora_operaciones">
+            <!-- Botones de funcionalidades -->
+            <button  id="idsum" onclick="agregarValor('+')">+</button>
+            <button  id="idres" onclick="agregarValor('-')">-</button>
+            <button  id="idnmul" onclick="agregarValor('x')">x</button>
+            <button  id="idndiv" onclick="agregarValor('/')">/</button>
+            
+             <button id="idres" onclick="operar()">=</button>
+             <button class="col2" id="idclear" onclick="limpiar()">c</button>
+            
+            
+        </div>
         </div>
     </section>
-    <div>
-
-    </div>
     <footer>
         Todos los derechos reservados
     </footer>
