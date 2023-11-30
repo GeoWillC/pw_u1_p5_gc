@@ -7,18 +7,21 @@
     <script src="../js/calculadoraCss.js"></script>
     <link rel="stylesheet" href="../css/estilosCalculadora.css">
 </head>
-<body class="general">
+<body >
     <div class="container">
     <header>
         Calculadora CSS
+        <br>
     </header>
+    <br>
+
     <nav>
         BARRA DE NAVEGACIÓN
     </nav>
     </div>
     
-    <section>
-        <div class="calculadora_general">
+    <section class="calculadora_general">
+        <div >
         <div class="rsp">
             <label id="respuesta" for="" >Ingrese datos</label>
         </div>
@@ -45,7 +48,7 @@
             <button  id="idnmul" onclick="agregarValor('x')">x</button>
             <button  id="idndiv" onclick="agregarValor('/')">/</button>
             
-             <button id="idres" onclick="operar()">=</button>
+             <button class="col2" id="idres" onclick="operar()">=</button>
              <button class="col2" id="idclear" onclick="limpiar()">c</button>
             
             
