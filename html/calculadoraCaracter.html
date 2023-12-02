@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/calculadoraCaracteres.css">
     <script src="../js/calculadoraCaracter.js"></script>
+    <script src="https://github.com/MikeMcl/decimal.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -16,25 +19,25 @@
         <div class="container">
             <div class="calculadora">
                 <div id="respuesta" class="display">Resultado</div>   
-                <button onclick="limpiar()">C</button>
-
-            <button onclick="borrar()">&larr;</button>
-            <button onclick="agregarValor('%')">&#x0025;</button>
-            <button onclick="agregarValor('7')">7</button>
-            <button onclick="agregarValor('8')">8</button>
-            <button onclick="agregarValor('9')">9</button>
-            <button onclick="agregarValor('x')">X</button>
-            <button onclick="agregarValor('4')">4</button>
-            <button onclick="agregarValor('5')">5</button>
-            <button onclick="agregarValor('6')">6</button>
-            <button onclick="agregarValor('-')">&#x002D;</button>
-            <button onclick="agregarValor('1')">1</button>
-            <button onclick="agregarValor('2')">2</button>
-            <button onclick="agregarValor('3')">3</button>
-            <button onclick="agregarValor('+')">&#x002B;</button>
-            <button onclick="agregarValor('0')">0</button>
-            <button onclick="agregarValor('.')">&#x002E;</button>
-            <button onclick="operar()">&#x003D;</button>
+            <button type="reset" class="twocol" onclick="limpiar()">C</button>
+            
+            <button class="btn btn-danger" onclick="borrar()">&larr;</button>
+            <button class="btn btn-warning" onclick="agregarValor('&#x0025;')">&#x0025;</button>
+            <button class="btn btn-info" onclick="agregarValor('7')">7</button>
+            <button class="btn btn-info" onclick="agregarValor('8')">8</button>
+            <button class="btn btn-info" onclick="agregarValor('9')">9</button>
+            <button class="btn btn-warning" onclick="agregarValor('x')">X</button>
+            <button class="btn btn-info" onclick="agregarValor('4')">4</button>
+            <button class="btn btn-info" onclick="agregarValor('5')">5</button>
+            <button class="btn btn-info" onclick="agregarValor('6')">6</button>
+            <button class="btn btn-warning" onclick="agregarValor('-')">&#x002D;</button>
+            <button class="btn btn-info" onclick="agregarValor('1')">1</button>
+            <button class="btn btn-info" onclick="agregarValor('2')">2</button>
+            <button class="btn btn-info" onclick="agregarValor('3')">3</button>
+            <button class="btn btn-warning" onclick="agregarValor('&#x002B;')">&#x002B;</button>
+            <button class="twocol" onclick="agregarValor('0')">0</button>
+            <button class="btn btn-warning" onclick="agregarValor('&#x002E;')">&#x002E;</button>
+            <button class="btn btn-success" onclick="operar()">&#x003D;</button>
             </div>
             
         </div>

@@ -1,3 +1,5 @@
+
+
 const parsear = (id) => parseInt(document.getElementById(id).value)
 // const valor=String.prototype.split("+")
 
@@ -34,7 +36,6 @@ function operar(){
             console.log(total)
             total += parseFloat(valor)
         }
-        // console.log(parseInt(division[0])+parseInt(division[1]))
         console.log(total)
         document.getElementById('respuesta').innerText=total
     }
@@ -48,7 +49,6 @@ function operar(){
             console.log(total)
             total -= parseFloat(division[i])
         }
-        // console.log(parseInt(division[0])-parseInt(division[1]))
         console.log(total)
         document.getElementById('respuesta').innerText=total
     }
@@ -59,7 +59,6 @@ function operar(){
         for(var i=1;i<division.length;i++){
             console.log(total)
             total *= parseFloat(division[i])
-             //console.log(parseInt(division[0])*parseInt(division[1]))
         }
         console.log(total)
         document.getElementById('respuesta').innerText=total
