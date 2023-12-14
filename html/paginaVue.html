@@ -14,7 +14,6 @@
     <nav></nav>
     <section>
         <h1>{{1+1}}</h1>
-        <p>{{true?'Verdadero':'Falso'}} </p>
         <div id="myApp">
             <h1>Hola Mundo</h1>
             <h1>Desde App.js</h1>
@@ -25,10 +24,22 @@
             <p>{{valor}}</p>
             <button v-on:click="CambiarMensaje()">Cambiar Mensaje</button>
             <button v-on:click="CambiarNumero()">sumar</button>
+            <button v-on:click="Restaurar()">Restaurar</button>
+            <br>
+            <p>{{lista}}</p>
+            <label for="idNombre">Nombre</label>
+            <input id="idNombre" type="text"  v-model="nombre" v-on:keypress="presionandoTecla">
+            <label for="idApellido">Apellido</label>
+            <input id="idApellido" type="text" v-model="apellido" v-on:keypress="agregarApellido">
+            <button v-on:click="AgregarEstudiante()">Agregar</button>
+            <ul >
+              <!-- <li v-for="(estudiante,index) in lista">{{index+1}} :{{estudiante.nombre}} - {{estudiante.apellido}} <button>Editar</button></li> -->
+              <li v-for="({nombre,apellido},index) in lista">{{index+1}} :{{nombre}} - {{apellido}} <button>Editar</button></li>
+            </ul>
         </div>
     </section>
     <footer></footer>
-    <script src="../js/paginaVue.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
