@@ -65,11 +65,11 @@ const app = Vue.createApp({
     },
     data() {
         return {
-            mensaje: 'hola mundo desde Vue.JS',
-            valor: 100,
-            lista: estudiantes,
-            nombre:'',
-            apellido:''
+            estudiantes: [{nombre:'George',apellido:'Conlago'},
+            {nombre:'Juan',apellido:'Perez'},
+            {nombre:'Marco',apellido:'Padilla'},
+            {nombre:'Pedro',apellido:'Montalvo'},
+            {nombre:'',apellido:'Velasquez'}]
         }
     }
 })

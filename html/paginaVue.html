@@ -14,7 +14,7 @@
     <nav></nav>
     <section>
         <h1>{{1+1}}</h1>
-        <div id="myApp">
+        <div id="myApp">    
             <h1>Hola Mundo</h1>
             <h1>Desde App.js</h1>
             <h1>{{1+1}}</h1>
@@ -25,17 +25,22 @@
             <button v-on:click="CambiarMensaje()">Cambiar Mensaje</button>
             <button v-on:click="CambiarNumero()">sumar</button>
             <button v-on:click="Restaurar()">Restaurar</button>
-            <br>
+            <br> o <br/>
             <p>{{lista}}</p>
             <label for="idNombre">Nombre</label>
-            <input id="idNombre" type="text"  v-model="nombre" v-on:keypress="presionandoTecla">
+            <input id="idNombre" type="text"  v-model="nombre" @keypress="presionandoTecla">
+            <p>{{nombre}}</p>
             <label for="idApellido">Apellido</label>
-            <input id="idApellido" type="text" v-model="apellido" v-on:keypress="agregarApellido">
+            <input id="idApellido" type="text" v-model="apellido" @keypress.enter="agregarEstudianteMod">
             <button v-on:click="AgregarEstudiante()">Agregar</button>
             <ul >
               <!-- <li v-for="(estudiante,index) in lista">{{index+1}} :{{estudiante.nombre}} - {{estudiante.apellido}} <button>Editar</button></li> -->
-              <li v-for="({nombre,apellido},index) in lista">{{index+1}} :{{nombre}} - {{apellido}} <button>Editar</button></li>
+              <li v-for="({nombre,apellido},index) in lista" >
+                <p v-if="nombre!==''">{{index+1}} :{{nombre}} - {{apellido}} </p> 
+                <!-- v-if="nombre!==undefined" //Da un error ya que sigue mostrando -->
+                <button v-if="nombre!==''">Editar</button></li>
             </ul>
+            <p>{{lista}}</p>
         </div>
     </section>
     <footer></footer>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listaEstudiantes.css">
+    <title>Formulario Estudiante</title>
+</head>
+
+<body>
+
+    <div class="container" id="myApp">
+        <header>
+            <h1> Estudiante </h1>
+
+        </header>
+        <nav></nav>
+        <section>
+            <p>T&iacute;lde </p>
+            <form class="form" action="https://miapi.com/procesarEstudiante" method="POST">
+                <h2>Nuevo Estudiante</h2>
+                <p type="Nombre:">
+                    <input id="idNombre" type="text">
+                </p>
+                <p type="Apellido:">
+                    <input id="idApellido" type="text">
+                </p>
+                <p type="C&eacute;dula:">
+                    <input id="idGenero" type="text">
+                </p>
+                <p type="G&eacute;nero:">
+                    <input id="idGenero" type="text">
+                </p>
+                <p type="Pa&iacute;s:">
+                    <input id="idGenero" type="text">
+                </p>
+                <button onclick="guardar()" id="guardar">Guardar</button>
+            </form>
+
+            <div>
+                <b-table hover :items="items"></b-table>
+              </div>
+    </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
