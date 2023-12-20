@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/listaEstudiantes.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
     <title>Formulario Estudiante</title>
 </head>
 
@@ -17,34 +19,59 @@
         </header>
         <nav></nav>
         <section>
-            <p>T&iacute;lde </p>
-            <form class="form" action="https://miapi.com/procesarEstudiante" method="POST">
+            <form class="form" >
                 <h2>Nuevo Estudiante</h2>
                 <p type="Nombre:">
-                    <input id="idNombre" type="text">
+                    <input id="idNombre" type="text" v-model="nombre" @keypress="presionandoTecla">
                 </p>
+              
                 <p type="Apellido:">
-                    <input id="idApellido" type="text">
+                    <input id="idApellido" type="text" v-model="apellido" @keypress="presionandoTecla">
                 </p>
-                <p type="C&eacute;dula:">
-                    <input id="idGenero" type="text">
+                
+                <p type="Cédula:">
+                    <input id="idCédula" type="text" v-model="cedula" @keypress="presionandoTecla">
                 </p>
-                <p type="G&eacute;nero:">
-                    <input id="idGenero" type="text">
+                <p type="Género:">
+                    <input id="idGenero" type="text" v-model="genero" @keypress="presionandoTecla">
                 </p>
-                <p type="Pa&iacute;s:">
-                    <input id="idGenero" type="text">
+                <p type="Edad:">
+                    <input id="idEdad" type="text" v-model="edad" @keypress="presionandoTecla">
                 </p>
-                <button onclick="guardar()" id="guardar">Guardar</button>
+                <button v-on:click.prevent="agregarEstudiante">Guardar</button>
             </form>
-
-            <div>
-                <b-table hover :items="items"></b-table>
-              </div>
+            <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Genero</th>
+                    <th>Edad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-show="nombre!==''" v-for="({nombre,apellido,cedula,genero,edad},index) in lista">
+                    <p v-show="nombre!==''"><td>{{index+1}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{apellido}}</td>
+                    <td>{{cedula}}</td>
+                    <td>{{genero}}</td>
+                    <td>{{edad}}</td>
+                    <td><button>Editar</button></td>
+                </p>
+                    
+                    
+                  </tr>
+                </tbody>
+              </table>
+              <!-- {{lista}} -->
+            
     </div>
     </section>
     <footer>
-
+        <script src="../js/listaEstudiantes.js"></script>
     </footer>
 </body>
 

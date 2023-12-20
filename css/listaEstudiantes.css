@@ -72,3 +72,40 @@ button {
     font-size: 16px;
 
 }
+
+table, th, td {
+    border: 1px solid;
+  }
+table{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}  
+
+
+/* Estilos personalizados para la tabla */
+.custom-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  /* Estilos para las celdas de encabezado */
+  .custom-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Estilos para las celdas de datos */
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Estilos alternados para filas */
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
